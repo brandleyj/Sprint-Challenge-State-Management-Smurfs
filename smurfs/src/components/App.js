@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import { getSmurfs } from "../actions/index";
+import SmurfForm from "./SmurfForm";
+import { Smurfs } from "./Smurfs";
 import "./App.css";
 
 class App extends Component {
