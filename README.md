@@ -23,10 +23,30 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
+
+React Context solves the problem of props drilling. It allows you to share props or state with an indirect child or parent.
+
 - [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+Actions are a way for a user to interact with the website. Actions also control
+what events happen at what time. Reducers are the place where action will change
+the state, api information, or any data that is sent through it and publish it
+to the store. The store is a library that stores and can display
+all of the current and previous information.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+Application state is global and component state is local.
+
+Application state has one store that is accessible to any component that is linked
+to it. Component state has multiple instances of different components and can be
+overwhelming with the amount of props being passed.
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
-- [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+* [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+I would say redux. While it was super complicated to learn with all the new syntax, I see how it can make your job easier when it comes to larger projects.
 
 ## Project Set Up
 
@@ -60,12 +80,12 @@ Follow these steps to set up your project:
 
 ```js
 [
-  {
-    name: "Brainey",
-    age: 200,
-    height: "5cm",
-    id: 0
-  }
+	{
+		name: "Brainey",
+		age: 200,
+		height: "5cm",
+		id: 0
+	}
 ];
 ```
 
@@ -93,18 +113,18 @@ Example of object created in Smurf DB:
 
 ```js
 [
-  {
-    name: "Brainey",
-    age: 200,
-    height: "5cm",
-    id: 0
-  },
-  {
-    name: "Sleepy",
-    age: 200,
-    height: "5cm",
-    id: 1
-  }
+	{
+		name: "Brainey",
+		age: 200,
+		height: "5cm",
+		id: 0
+	},
+	{
+		name: "Sleepy",
+		age: 200,
+		height: "5cm",
+		id: 1
+	}
 ];
 ```
 
@@ -153,11 +173,11 @@ Example:
 
 ```js
 output: [
-  {
-    name: "Sleepy",
-    age: 200,
-    height: "5cm",
-    id: 1
-  }
+	{
+		name: "Sleepy",
+		age: 200,
+		height: "5cm",
+		id: 1
+	}
 ];
 ```
